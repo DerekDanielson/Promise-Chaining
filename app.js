@@ -9,3 +9,9 @@ const promise = new Promise((resolve, reject) => {
         }
     }, 1000);
 });
+
+promise
+    .then((user) => {
+        console.log(user);
+    })
+    .catch((error) => console.log(error));
